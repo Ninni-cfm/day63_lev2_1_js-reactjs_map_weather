@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.App > h1 {
+    text-align: center;
+    font-size: 3em;
+}
+.Weather {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1vmin;
+}
+.WeatherDay {
+    width: 12.5%;
+    padding: 0 2.5vmin;
+    border: 1px solid silver;
+    border-radius: 3vh;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.WeatherDay > h2 {
+    color: silver;
+    font-size: 2em;
+}
+.WeatherDay > img {
+    height: 8vmin;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.WeatherDay > p {
+    font-size: 1.5em;
+    font-weight: 700;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.WeatherDay > p > span {
+    color: blue;
 }
